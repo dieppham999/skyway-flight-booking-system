@@ -14,8 +14,20 @@
     <main>
         <section>
             <h3>Đặt vé máy bay</h3>
-            <form action="">
-                
+            <form action="https://bold-tiger-59.webhook.cool" method="post">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Nhập email" required> <br>
+
+                <label for="class">Hạng ghế:</label>
+                <select name="class" id="class">
+                    <option value="economy" selected>Chọn hạng ghế</option>
+                    <option value="economy">Phổ thông</option>
+                    <option value="first_class">Hạng nhất</option>
+                    <option value="business">Thương gia</option>
+                </select><br>
             </form>
         </section>
 
@@ -26,30 +38,8 @@
             </table>
         </section>
     </main>
-    <h2>Đặt vé máy bay</h2>
-    <div>
-        Tên: <input class="name-box"> <br>
-        Email: <input class="mail-box"> <br>
-        Hạng ghế: <input> <br> <button>Gửi đi</button>
-    </div>
-    <br>
-    <hr><br>
-    <h2>Lịch bay hôm nay</h2>
-    <table border="1">
-        <tr>
-            <td>Mã chuyến</td>
-            <td>Hành trình</td>
-            <td>Giờ bay</td>
-        </tr>
-        <tr>
-            <td>VN123</td>
-            <td>Hà Nội - TP.HCM</td>
-            <td>08:00</td>
-        </tr>
-        <tr>
-            <td>VJ456</td>
-            <td>Hà Nội - Đà Nẵng (ĐÃ HỦY)</td>
-        </tr>
-    </table>
+    <footer>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+    </footer>
 </body>
 </html>
