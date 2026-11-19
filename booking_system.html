@@ -15,19 +15,50 @@
         <section>
             <h3>Đặt vé máy bay</h3>
             <form action="https://bold-tiger-59.webhook.cool" method="post">
-                <label for="name">Tên:</label>
-                <input type="text" id="name" name="name" placeholder="Nhập tên" required> <br>
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
 
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Nhập email" required> <br>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập tên" required> <br>
+                    
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="number" name="phone" id="phone" placeholder="Nhập số điện thoại" required> <br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Nhập email" required> <br>
+                    
+                    <label>Giới tính</label>
+                    
+                    <input type="radio" name="gender" id="male" required>
+                    <label for="male">Nam</label>
+                    
+                    <input type="radio" name="gender" id="female" required>
+                    <label for="female">Nữ</label><br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Thông tin đặt vé</legend>
+                    <label for="date">Ngày bay</label>
+                    <input type="date" name="date" id="date" required><br>
+                    
+                    <label for="flight">Chuyến bay</label>
+                    <select name="flight" id="flight">
+                        <option value="default" selected>Chọn chuyến bay</option>
+                        <option value="VN123">Hà Nội → TP. Hồ Chí Minh</option>
+                        <option value="VJ456">Hà Nội → Đà Nẵng</option>
+                        <option value="QH789">TP. Hồ Chí Minh → Phú Quốc</option>
+                        <option value="VN234">Hà Nội → Nha Trang</option>
+                        <option value="VJ567">Đà Nẵng → Hà Nội</option>
+                    </select><br>
 
-                <label for="class">Hạng ghế:</label>
-                <select name="class" id="class">
-                    <option value="economy" selected>Chọn hạng ghế</option>
-                    <option value="economy">Phổ thông</option>
-                    <option value="first_class">Hạng nhất</option>
-                    <option value="business">Thương gia</option>
-                </select><br>
+                    <label for="class">Hạng ghế:</label>
+                    <select name="class" id="class">
+                        <option value="economy" selected>Chọn hạng ghế</option>
+                        <option value="economy">Phổ thông</option>
+                        <option value="first_class">Hạng nhất</option>
+                        <option value="business">Thương gia</option>
+                    </select><br>
+                </fieldset>
             </form>
         </section>
 
